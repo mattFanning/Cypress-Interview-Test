@@ -5,7 +5,7 @@ import createBundler from "@bahmutov/cypress-esbuild-preprocessor";
 
 export default defineConfig({
   e2e: {
-    baseUrl: "https://xtractone.com",
+    baseUrl: "https://example.cypress.io/",
     specPattern: "**/*.feature",
     defaultCommandTimeout: 10000,
 

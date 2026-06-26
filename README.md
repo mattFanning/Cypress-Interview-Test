@@ -6,7 +6,7 @@ This exercise tests the candidate's ability to understand and build Cypress test
 - Typescript
 - Page Object Model (_POM_) files.
 
-It uses the Xtract One website.
+It uses the cypress.io kitchen sink website (https://example.cypress.io/).
 
 ## Prerequisites
 
@@ -27,29 +27,23 @@ Setup should be complete. The `@example` scenario should be runnable: `npx cypre
 
 ### Test 1
 
-Using the provided feature file `cypress/e2e/homePage/homePage.feature`, fill in the missing step implementations for `@test1`.
+1. Create a POM for cypress.io's "Querying" page _(link off of example page; just add the selectors/actions you need, not everything)_.
+2. Using the provided feature file `cypress/e2e/example/example.feature`, update `@test1`'s "then" step to use your new POM.
 
 ### Test 2
 
-Using the provided feature file `cypress/e2e/homePage/homePage.feature` do the following for `@test2`:
+Using the provided feature file `cypress/e2e/example/example.feature` do the following for `@test2`:
 
-- write the test steps for the scenario
 - implement the steps
-- implement the POM object
-
-**Notes:**
-
-- The "control hamburger menu" is the top right "2 vertical bar" menu that expands to a full page popup with links and Recent News
-- Any created POMs do not need selectors & actions, (_example `arenaStadium.page.ts`_)
+- implement any POM objects necessary for this exercise _(just add the selectors/actions you need, not everything)_
 
 ### Test 3
 
-This one doesn't require coding, just thinking.
+Using the provided feature file `cypress/e2e/example/example.feature` do the following for `@test3`:
 
-1. Go to the "contact" page (https://xtractone.com/contact/) & examine the contact form.
-
-2. Under **Test 3 Scenarios** in this README, list the different scenarios you could test when filling in the contact information.  
-   **Note:** These should be written in full Gherkin syntax
+- write the steps
+- implement the steps
+- implement any POM objects necessary for this exercise _(just add the selectors/actions you need, not everything)_
 
 ## Submission
 
@@ -59,10 +53,3 @@ When ready:
 2. Create a PR from your fork to source Repo. Please include your name in the PR.
    Once submitted, email: `matthew.fanning@xtractone.com` stating completeness.
    Please include the link to your PR in the email
-
-## Test 3 Scenarios
-
-```gherkin
-
-
-```
