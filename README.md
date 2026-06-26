@@ -27,8 +27,8 @@ Setup should be complete. The `@example` scenario should be runnable: `npx cypre
 
 ### Test 1
 
-1. Create a POM for cypress.io's "Querying" page _(link off of example page; just add the selectors/actions you need, not everything)_.
-2. Using the provided feature file `cypress/e2e/example/example.feature`, update `@test1`'s "then" step to use your new POM.
+- create a POM for cypress.io's "Querying" page _(link off of example page; just add the selectors/actions you need, not everything)_.
+- using the provided feature file `cypress/e2e/example/example.feature`, update `@test1`'s "then" step to use your new POM.
 
 ### Test 2
 
