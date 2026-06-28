@@ -22,6 +22,10 @@ export class ExamplePOM implements POM {
       return cy.get("h1").contains("Kitchen Sink");
     },
 
+    actionsLink: (): CypressDomElement => {
+      return cy.get('a[href="/commands/actions"]').contains("Actions");
+    },
+
     queryingLink: (): CypressDomElement => {
       return cy.get('a[href="/commands/querying"]').contains("Querying");
     },
@@ -31,6 +35,10 @@ export class ExamplePOM implements POM {
     },
   };
   actions = {
+    clickActionsLink: () => {
+      this.selectors.actionsLink().click({ force: true });
+    },
+
     clickQueryingLink: () => {
       this.selectors.queryingLink().click({ force: true });
     },

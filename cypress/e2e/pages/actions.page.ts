@@ -1,7 +1,7 @@
 import POM from "./POM";
 
-export class QueryingPage implements POM {
-    url = "/commands/querying";
+export class ActionsPage implements POM {
+    url = "/commands/actions";
 
     visit(): void {
         cy.visit(this.url);
@@ -9,13 +9,13 @@ export class QueryingPage implements POM {
 
     selectors = {
         title: (): CypressDomHeadingElement => {
-            return cy.get("h1").contains("Querying");
+            return cy.get("h1").contains("Actions");
         },
     };
 
     assertions = {
         verifyUrl: () => {
-            cy.url().should("eq", "https://example.cypress.io/commands/querying");
+            cy.url().should("eq", "https://example.cypress.io/commands/actions");
         },
     };
 }

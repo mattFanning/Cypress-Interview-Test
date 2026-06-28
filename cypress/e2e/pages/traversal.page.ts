@@ -8,7 +8,9 @@ export class TraversalPage implements POM {
     }
 
     selectors = {
-        pageTitle: () => cy.get("h1"),
+        title: (): CypressDomHeadingElement => {
+            return cy.get("h1").contains("Traversal");
+        },
     };
 
     assertions = {
