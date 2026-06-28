@@ -26,7 +26,9 @@ Feature: Cypress.io Example Page
     When I click the "Traversal" link
     Then I can confirm that the page redirects to the "Traversal" page
 
-  # Test 2: see README.md for instructions
+  # Test 3: see README.md for instructions
   @test3
   Scenario: Clicking the Commands > Actions to the Actions page redirects to the Actions page
+    When I click the "Actions" link
+    Then I can confirm that the page redirects to the "Actions" page
     
