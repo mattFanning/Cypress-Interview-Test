@@ -25,10 +25,18 @@ export class ExamplePOM implements POM {
     queryingLink: (): CypressDomElement => {
       return cy.get('a[href="/commands/querying"]').contains("Querying");
     },
+
+    traversalLink: (): CypressDomElement => {
+      return cy.get('a[href="/commands/traversal"]').contains("Traversal");
+    },
   };
   actions = {
     clickQueryingLink: () => {
       this.selectors.queryingLink().click({ force: true });
+    },
+
+    clickTraversalLink: () => {
+      this.selectors.traversalLink().click({ force: true });
     },
   };
 }
